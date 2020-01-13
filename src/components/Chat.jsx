@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import axios from "axios";
-import ApiConstants from "../apiConstants";
+import ApiConstants from "../api/apiConstants";
 
 export default class Modal extends Component {
   constructor(props) {

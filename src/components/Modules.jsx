@@ -1,22 +1,18 @@
 import React, { Component } from "react";
 import { DragDropContext, Droppable, Draggable } from "react-beautiful-dnd";
-import doctor from "../static/doctor.png";
-import start from "../static/start.png";
-import cancel from "../static/cancel.png";
-import booking from "../static/booking.png";
-import register from "../static/register.png";
-import lab from "../static/lab.svg";
+import doctor from "../assets/images/doctor.png";
+import start from "../assets/images/start.png";
+import cancel from "../assets/images/cancel.png";
+import booking from "../assets/images/booking.png";
+import register from "../assets/images/register.png";
+import lab from "../assets/images/lab.svg";
 import Modal from "./Chat";
 import axios from "axios";
-import ApiConstants from "../apiConstants";
+import ApiConstants from "../api/apiConstants";
 
 
-// fake data generator
+// fake data
 const getItems = (count, offset = 0) =>
-  //   Array.from({ length: count }, (v, k) => k).map(k => ({
-  //     id: `bot-${k + offset}`,
-  //     content: `bot ${k + offset}`
-  //   }));
   [
     {
       id: "1",

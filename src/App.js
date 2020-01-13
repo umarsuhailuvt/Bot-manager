@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import Navbar from './components/Navbar';
-import Layout from './screens/Layout';
+import Layout from './containers/Layout';
 
 function App() {
   return (
