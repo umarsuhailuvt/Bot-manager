@@ -1,0 +1,392 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 13px;
+  font-family: "Open Sans", sans-serif;
+  color: #4d4f5c;
+}
+
+.bg-outer {
+  width: 100%;
+  height: 100vh;
+  float: left;
+  margin: 0px;
+  background: #f2f2f2;
+  padding: 0;
+  position: relative;
+}
+
+.chat-outer {
+  position: absolute;
+  height: auto;
+  width: 400px;
+  padding: 15px;
+  background: #fff;
+  position: absolute;
+  border-radius: 16px;
+  /* top: 0; */
+  right: 80px;
+  bottom: 90px;
+  -webkit-box-shadow: 0px 3px 5px 0px rgba(74, 74, 74, 0.25);
+  -moz-box-shadow: 0px 3px 5px 0px rgba(74, 74, 74, 0.25);
+  box-shadow: 0px 3px 5px 0px rgba(74, 74, 74, 0.25);
+}
+.chat-opener {
+  position: absolute;
+  bottom: 23px;
+  right: 56px;
+}
+.chat-top {
+  padding: 0 0 15px;
+  border-bottom: 1px solid #e8e9ec;
+  float: left;
+  width: 100%;
+  position: relative;
+}
+
+.logo-otr {
+  width: 59px;
+  height: 59px;
+  float: left;
+  margin: 0 10px 0;
+  position: relative;
+}
+
+.logo-otr img {
+  width: 100%;
+}
+
+.logo-otr .fa-circle {
+  position: absolute;
+  right: 0;
+  bottom: 3px;
+  color: #5ee2a0;
+}
+
+.chat-top h2 {
+  color: #4d4f5c;
+  margin: 5px 0;
+  padding: 0;
+}
+
+.chat-top span {
+  font-size: 13px;
+  color: #a1a0ae;
+}
+
+.close-btn {
+  width: auto;
+  height: auto;
+  float: right;
+  position: absolute;
+  right: 0;
+  bottom: 32px;
+  cursor: pointer;
+}
+
+.close-btn i {
+  font-size: 20px;
+  color: #a4afb7;
+}
+
+.content-area {
+  width: 100%;
+  height: auto;
+  float: left;
+  margin: 20px 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  max-height: 50vh;
+  text-align: left;
+  min-height: 45vh;
+  padding: 4px;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+::-webkit-scrollbar:hover {
+  // display: none;
+  width: 8px;
+  border-radius: 5px;
+  background: #f2f2f2;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 15px;
+  background: #d9d2d2;
+}
+.content-area p {
+  font-size: 14px;
+  line-height: 28px;
+}
+
+.type-outer {
+  width: 100%;
+  height: auto;
+  float: left;
+  margin-top: 20px;
+  border-top: 1px solid #e8e9ec;
+}
+
+.form-control {
+  display: block;
+  width: 90%;
+  height: calc(2.25rem + 2px);
+  padding: 5px 20px;
+  margin-top: 15px;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: none;
+  font-size: 14px;
+}
+
+.type-outer ul {
+  margin: 0;
+  padding: 0;
+}
+
+.type-outer ul li {
+  list-style: none;
+  float: left;
+  color: #ccc;
+  margin: 0 5px;
+}
+.type-outer ul li {
+  span {
+    color: rgb(151, 151, 151);
+  }
+  span:hover {
+    color: #f28701;
+  }
+}
+.type-outer ul li:hover {
+  color: #f28701;
+  cursor: pointer;
+}
+.image-input {
+  opacity: 0;
+  width: 110px;
+  position: absolute;
+  left: 36px;
+  cursor: pointer;
+}
+.input:focus {
+  outline: none !important;
+}
+.form-control:focus {
+  outline: none !important;
+}
+li {
+  a {
+    text-decoration: none;
+    color: #ccc;
+  }
+  a:hover {
+    color: #f28701;
+    cursor: pointer;
+  }
+}
+.DayPicker-Months {
+  outline: 1px solid #3f94ff26;
+}
+.DayPicker-Months:focus {
+  outline: none !important;
+}
+.DayPicker-Month:focus {
+  outline: none !important;
+}
+.DayPicker-wrapper:focus {
+  outline: none !important;
+}
+.submit-button {
+  border: 1px solid #f28701;
+  color: #fa852a;
+  float: right;
+  border-radius: 50px;
+  width: 77px;
+}
+.submit-button:hover {
+  background: #ff9a1b;
+  color: white;
+}
+.form-control:disabled,
+.form-control[readonly] {
+  background-color: #e9ecef7d;
+  opacity: 1;
+}
+.DayPicker {
+  width: 100%;
+}
+.type-outer:focus {
+  outline: none !important;
+}
+form:focus {
+  outline: none !important;
+}
+input:focus {
+  outline: none !important;
+  border: none !important;
+}
+.form-control:focus {
+  box-shadow: none;
+}
+.input {
+  border: none !important;
+}
+.image-upload-inactive {
+  color: #f18829;
+}
+.rotate {
+  width: 70%;
+  animation: rotate-keyframes 1s;
+  transform: rotate(180deg);
+}
+
+@keyframes rotate-keyframes {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(180deg);
+  }
+}
+.rotate2 {
+  width: 70%;
+  animation: rotate2-keyframes 1s;
+  transform: rotate(0deg);
+  background: none;
+  border-radius: 24px 24px 0px 28px;
+  box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.25)
+}
+.rotate2:hover{
+  box-shadow: 0px 3px 5px 0px rgba(51, 51, 51, 0.50);
+  cursor: pointer;
+}
+@keyframes rotate2-keyframes {
+  from {
+    transform: rotate(180deg);
+  }
+
+  to {
+    transform: rotate(0deg);
+  }
+}
+@media (max-width: 410px) and (min-width: 319px) {
+  .chat-opener {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+  .chat-outer {
+    height: 90%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    /* margin-bottom: 215px; */
+    width: 100%;
+    padding: 15px;
+    background: #fff;
+    border-radius: 16px;
+    bottom: 120px;
+    box-shadow: 0px 3px 5px 0px rgba(74, 74, 74, 0.25);
+  }
+  .content-area {
+    height: 100%;
+  }
+}
+@media (max-width: 500px) and (min-width: 411px) {
+  .chat-opener {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+  .chat-outer {
+    height: 90%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    /* margin-bottom: 215px; */
+    width: 100%;
+    padding: 15px;
+    background: #fff;
+    border-radius: 16px;
+    bottom: 120px;
+    box-shadow: 0px 3px 5px 0px rgba(74, 74, 74, 0.25);
+  }
+  .content-area {
+    height: 100%;
+  }
+}
+.mic-position {
+  font-size: 25px;
+  display: block;
+  padding: 4px 6px;
+  margin: auto 0px;
+  margin-top: 15px;
+}
+.image-upload-wrapper {
+  padding: 10px;
+}
+.inactive-buttons {
+  border: 1px solid #f18829;
+  color: #f18829;
+  font-size: 14px;
+  cursor: pointer;
+}
+.inactive-buttons:hover {
+  color: white;
+  background: #f18829;
+}
+.inactive-buttons-skip {
+  border: 1px solid #f18829;
+  color: #f18829;
+  font-size: 14px;
+  cursor: auto;
+}
+.inactive-buttons-skip:hover {
+  color: white;
+  background: #f18829;
+}
+input[type=file] {
+  cursor: pointer;
+}
+.pulse{
+  color:tomato
+}
+.DayPicker-Day--selected:not(.DayPicker-Day--disabled):not(.DayPicker-Day--outside){
+  background-color: #f18829 !important;
+}
+.circle {
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  opacity: .25;
+}
+.red {
+  background-color: tomato;
+  position: absolute;
+  right: 8px;
+  bottom: 21px;
+  animation: up-right 1s infinite;
+}
+@keyframes up-right {
+  0% {
+      transform: scale(1);
+      opacity: .25
+  }
+  50% {
+      transform: scale (1, 10);
+      opacity: 0;
+  }
+  100% {
+      transform: scale(1);
+      opacity: .25;
+  }
+}
